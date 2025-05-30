@@ -2,6 +2,34 @@ build:
   version: "2.0"
 
 user:
+  packages:
+    diamond:
+      discount: 20
+      discountClass: ALL-PRODUCTS
+      discountPeriod: ALL-MEMBERSHIP-PERIOD
+      shipping:
+        priority: same-day
+        free: true
+      earlyAccess: true
+      supportLevel: vip
+    gold:
+      discount: 10
+      discountClass: FLAGSHIP-PRODUCTS
+      discountPeriod: ONLY-DURING-FESTIVE-SEASONS
+      shipping:
+        priority: expedited # in two-day delivery
+        free: false
+      earlyAccess: false
+      supportLevel: premium
+    platinum:
+      discount: 5
+      discountClass: LIMITED-PRODUCTS
+      discountPeriod: ONLY-DURING-FLASH-SALE
+      shipping:
+        priority: standard
+        free: false
+      earlyAccess: false
+      supportLevel: standard
   message: "Welcome to MagicBox user related QA APIs"
   contactDetails:
     name: "Sagar Mitkari - Developer"
