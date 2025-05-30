@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+user:
+  message: "Welcome to MagicBox ProductCatalog related PROD APIs"
+  contactDetails:
+    name: "Sagar Mitkari - Developer"
+    email: "sagar.m@magicbox.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1323
