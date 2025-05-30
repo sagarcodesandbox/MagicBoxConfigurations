@@ -6,6 +6,7 @@ product:
   features:
     discount:
       enabled: true
+      percentage: 10
     flashSale:
       enabled: false
 
