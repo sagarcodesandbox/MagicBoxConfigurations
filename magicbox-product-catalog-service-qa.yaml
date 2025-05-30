@@ -1,6 +1,15 @@
 build:
   version: "2.0"
 
+
+product:
+  features:
+    discount:
+      enabled: true
+    flashSale:
+      enabled: false
+
+
 user:
   message: "Welcome to MagicBox ProductCatalog related QA APIs"
   contactDetails:

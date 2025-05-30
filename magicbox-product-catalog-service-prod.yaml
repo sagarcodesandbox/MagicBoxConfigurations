@@ -1,6 +1,13 @@
 build:
   version: "1.0"
 
+product:
+  features:
+    discount:
+      enabled: true
+    flashSale:
+      enabled: false
+
 user:
   message: "Welcome to MagicBox ProductCatalog related PROD APIs"
   contactDetails:
