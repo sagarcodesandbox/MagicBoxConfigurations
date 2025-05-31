@@ -37,3 +37,9 @@ user:
   onCallSupport:
     - (555) 555-1234
     - (555) 523-1323
+
+info:
+  app:
+    name: "magicbox-user-service"
+    description: "Magicbox USer Application"
+    version: "1.0.0"
