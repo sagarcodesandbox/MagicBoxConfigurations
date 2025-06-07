@@ -1,3 +1,4 @@
+# Inside magicbox-eurekaserver-service's application.yml
 server:
   port: 8070
 
@@ -5,7 +6,7 @@ eureka:
   instance:
     hostname: localhost
   client:
-    fetchRegistry: false
-    registerWithEureka: false
+    fetchRegistry: true       # Typically true for a server (to fetch its own entries)
+    registerWithEureka: true  # <--- CHANGE THIS TO TRUE
     serviceUrl:
       defaultZone: "http://${eureka.instance.hostname}:${server.port}/eureka/"
