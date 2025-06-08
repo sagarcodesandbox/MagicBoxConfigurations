@@ -1,0 +1,17 @@
+# magicbox-gatewayserver-local.yaml (in your Git repo)
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:8070/eureka/" # <-- Point to localhost
+
+# Add any other properties here that should be different for local runs
+# For example, if Keycloak or Config Server itself are different locally
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:7080/realms/master
+          jwk-set-uri: http://localhost:7080/realms/master/protocol/openid-connect/certs
